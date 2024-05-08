@@ -9,6 +9,55 @@
 
 <link rel="alternate" type="application/rss+xml" title="Glazing&raquo; Feed" href="https://labradorcoin.io/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Glazing&raquo; Comments Feed" href="https://labradorcoin.io/comments/feed/" />
+<style>
+	#cat-top {
+  animation-name: cat-top;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#cat-top-shadow {
+  animation-name: cat-top-shadow;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  background-color: #222;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px / 50px;
+}
+
+@keyframes cat-top {
+  0% { 
+    transform: translate(0, 0px);
+  }
+  65% { 
+    transform: translate(0, 30px);
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  100% { 
+	transform: translate(0, -0px);
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+}
+
+@keyframes cat-top-shadow {
+  0% {
+    filter: blur(10px);
+    opacity: .25;
+  }
+  35% {
+    filter: blur(15px);
+    opacity: .15;
+    transform: scale(1.3);
+  }
+  100% {
+    filter: blur(10px);
+    opacity: .25;
+  }
+}
+</style>
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/labradorcoin.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
 /*! This file is auto-generated */
@@ -305,7 +354,9 @@ Glazing is a slang term that's synonymous with dickriding</b></p>						</div>
 				</div>
 				<div class="elementor-element elementor-element-30c86251 elementor-widget elementor-widget-image" data-id="30c86251" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="536" height="664" src="/images/logo.png" class="attachment-large size-large wp-image-64" alt="" loading="lazy"  sizes="(max-width: 536px) 100vw, 536px" />															</div>
+															<img decoding="async" width="536" height="664" src="/images/logo.png" class="attachment-large size-large wp-image-64" alt="" loading="lazy" 
+															id="cat-top"
+															sizes="(max-width: 536px) 100vw, 536px" />															</div>
 				</div>
 					</div>
 		</div>
